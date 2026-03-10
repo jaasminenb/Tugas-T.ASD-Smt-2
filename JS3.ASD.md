@@ -87,3 +87,26 @@
 
 ---
 
+## Latihan Praktikum Nomor 1: Implementasi Array of Objects pada Data Dosen
+
+### Hasil Running:
+![Hasil Running Latihan 1](img/js3-t1.png)
+
+### Penjelasan Kode:
+1. **Class Dosen12**: Berfungsi sebagai blueprint yang memiliki empat atribut: `kode`, `nama`, `jenisKelamin` (String), dan `usia` (int). Terdapat constructor untuk mempermudah inisialisasi data objek.
+2. **Array of Objects**: Pada class `DosenDemo12`, dideklarasikan array `Dosen12[] arrayOfDosen = new Dosen12[3];` untuk menyimpan tiga objek dosen.
+3. **Input dengan Loop**: Menggunakan perulangan `for` untuk menerima input dari pengguna melalui `Scanner`. Data numerik (`usia`) diolah menggunakan `Integer.parseInt()` agar tidak terjadi error pembacaan buffer pada `Scanner`.
+4. **Instansiasi**: Di dalam loop, setiap elemen array diisi dengan objek baru melalui perintah `new Dosen12(...)`.
+5. **Output**: Menggunakan perulangan `for` kedua untuk menampilkan kembali seluruh data yang telah tersimpan di dalam array secara terstruktur.
+
+
+## Latihan Praktikum Nomor 2: Pengolahan Data Array of Objects (DataDosen)
+
+### Hasil Running:
+![Hasil Running Latihan 2](img/js3-t2.png)
+
+### Penjelasan Kode:
+1. **Class DataDosen12**: Dibuat sebagai class khusus untuk menangani pengolahan data kolektif dari array. Ini mengikuti prinsip pemisahan tanggung jawab (Separation of Concerns).
+2. **Method `dataSemuaDosen`**: Menggunakan perulangan *for-each* untuk mencetak seluruh atribut objek dalam array.
+3. **Logika Perbandingan**: Pada method `infoDosenPalingTua` dan `infoDosenPalingMuda`, dilakukan teknik *searching* sederhana dengan membandingkan nilai atribut `usia` dari elemen pertama ke elemen-elemen berikutnya.
+4. **Logika Agregasi**: Method `rerataUsiaDosenPerJenisKelamin` menghitung jumlah total usia dan membaginya dengan jumlah personel masing-masing gender untuk mendapatkan nilai rata-rata.
