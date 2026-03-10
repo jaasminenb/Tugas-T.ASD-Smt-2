@@ -66,7 +66,7 @@
 
 ## 3.4 Percobaan 3: Penambahan Operasi Matematika pada Elemen Array of Objects
 
-![Hasil Percobaan 3.4](img/image_9722fd.png)
+![Hasil Percobaan 3.4](img/js3-3.4.2.png)
 
 ### Jawaban Pertanyaan 3.4.3:
 1. **Dapatkah kita melakukan operasi matematika terhadap atribut yang bertipe data numerik dalam array of objects?**
